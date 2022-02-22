@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг»
 
 * Студент: [Алиса Пепел](https://up.htmlacademy.ru/javascript/25/user/615601).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Карпов](https://up.htmlacademy.ru/javascript/25/user/518893).
 
 ---
 
