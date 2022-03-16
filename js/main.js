@@ -1,15 +1,8 @@
-function isNum (value) {
-  return typeof value === "number"
-}
-
 function isPositive (value) {
   return Math.sign(value)
 }
 
 function getRandomInt (min, max) {
-  if (!isNum(min) || !isNum(max)) {
-    return null
-  }
   if (isPositive(min) !== 1) {
     min = Math.abs(min);
   }
@@ -30,10 +23,7 @@ function getRandomInt (min, max) {
 
 getRandomInt(1, 8);
 
-function getRandomFloatPoint (min, max, round) {
-  if (!isNum(min) || !isNum(max)) {
-    return null
-  }
+function getRandomNumber (min, max, precision) {
   min = Math.abs(min);
   max = Math.abs(max);
   // примерно как здесь, я в самом начале избавляюсь от возможных отрицательных чисел
@@ -46,7 +36,7 @@ function getRandomFloatPoint (min, max, round) {
     return Math.floor(Math.random() * (maxNum - minNum + 1) ) + minNum
   }
   const num = Math.random() * (max - min + 1) + min;
-  return +(num.toFixed(round))
+  return +(num.toFixed(precision))
 }
 
-getRandomFloatPoint(9, 1, 3);
+getRandomNumber(9, 1, 3);
