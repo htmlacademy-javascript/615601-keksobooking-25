@@ -3,7 +3,7 @@ function getRandomPositiveInt (a, b) {
   const max = Math.floor(Math.max(Math.abs(a), Math.abs(b)));
   return Math.floor(Math.random() * (max - min + 1) + min)
 }
-console.log(getRandomPositiveInt(1, 8))
+getRandomPositiveInt(1, 8);
 
 function getRandomPositiveFloat (a, b, precision) {
   const min = Math.ceil(Math.min(Math.abs(a), Math.abs(b)));
@@ -55,6 +55,6 @@ const createOffer = () => {
   };
 };
 
-const similarWizards = Array.from({length: 10}, createOffer);
+const similarOffers = Array.from({length: 10}, createOffer);
 
-console.log(similarWizards);
+console.log(similarOffers);
